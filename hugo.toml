@@ -1,7 +1,11 @@
+# Sitenin tam adresini buraya yazıyoruz. En önemli satır bu.
 baseURL = "https://kapanci.github.io/blog-sitem/"
 languageCode = "tr-tr"
-title = "Ali Osman Kapancı" # Sadece isminiz, daha sade durur
+title = "Ali Osman Kapancı"
 theme = "PaperMod"
+
+# Yeni eklenen bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
+publishDir = "public" 
 
 [params]
   author = "Ali Osman Kapancı"
@@ -10,17 +14,13 @@ theme = "PaperMod"
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
+  defaultTheme = "auto"
 
-  # BU BÖLÜM ANA SAYFANIZI OLUŞTURACAK (Referans site gibi)
   [params.profileMode]
     enabled = true
     title = "Ali Osman Kapancı"
     subtitle = "Merhaba, burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum. Keyifli okumalar!"
-    # Görsel istemediğiniz için bu satırı kullanmıyoruz.
-    # imageUrl = "/images/profil.jpg" 
     
-    # Ana sayfadaki butonlar
     [[params.profileMode.buttons]]
       name = "Yazılar"
       url = "/posts"
@@ -28,20 +28,16 @@ theme = "PaperMod"
       name = "Hakkımda"
       url = "/hakkimda"
 
-  # Sosyal Medya İkonları
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kapanci"
-
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-
   [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
 
-# Üst menü ayarları (isteğe bağlı)
 [menu]
   [[menu.main]]
     identifier = "yazilar"

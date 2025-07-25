@@ -1,10 +1,10 @@
 +++
 date = '2025-07-25T11:25:02+03:00'
 draft = false
-title = 'Yeni Yazimin Adi'
+title = 'Staj Günlüklerim: Softtech'te Bir Yazılım Stajyerinin Yolculuğu 2'
 +++
 
-✍️ 2. Yazı – Plateau Studio ile İlk Gerçek Uygulamalarım
+✍️ **Plateau Studio ile İlk Gerçek Uygulamalarım**
 Softtech’te stajıma başladıktan sonra, ilk hafta oryantasyon süreciyle tanıştım. Şirketin kullandığı araçlar, iç iletişim platformları, güvenlik politikaları ve ekip yapısı gibi birçok konuda bilgilendirildik. Bu süreçte özellikle mentörlerimizin bizimle birebir ilgilenmesi, sormaktan çekindiğimiz her konuda destek olmaları, yeni ortama adapte olmamı oldukça kolaylaştırdı.
 
 Oryantasyonun ardından teknik eğitimlere geçtik. Bu eğitimler sırasında Plateau Studio adlı düşük kod geliştirme platformuyla tanıştım. Daha önce hiç low-code bir platformla çalışmamıştım, bu yüzden başta biraz çekinsem de zamanla mantığını anladım ve keyif almaya başladım. Component'leri kullanarak kullanıcı arayüzü oluşturmak, event'lerle davranışları tanımlamak ve veri yönetimini bu yapıda öğrenmek benim için oldukça öğretici oldu.
