@@ -1,7 +1,7 @@
 +++
-date = '2025-07-24T10:54:00+03:00'
+title = "Staj Günlüklerim: Softtech'te Bir Yazılım Stajyerinin Yolculuğu"
+date = "2025-07-24T10:54:00+03:00"
 draft = false
-title = 'Staj Günlüklerim: Softtech'te Bir Yazılım Stajyerinin Yolculuğu'
 +++
 
 ✍️ **Staja Kabul Süreci: Teknik Sınavdan Mülakata**

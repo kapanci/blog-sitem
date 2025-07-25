@@ -1,7 +1,7 @@
 +++
-date = '2025-07-25T11:25:02+03:00'
+title = "Staj Günlüklerim: Softtech'te Bir Yazılım Stajyerinin Yolculuğu 2"
+date = "2025-07-25T11:25:02+03:00"
 draft = false
-title = 'Staj Günlüklerim: Softtech'te Bir Yazılım Stajyerinin Yolculuğu 2'
 +++
 
 ✍️ **Plateau Studio ile İlk Gerçek Uygulamalarım**
