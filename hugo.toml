@@ -1,5 +1,35 @@
 baseURL = "https://kapanci.github.io/blog-sitem/"
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = "tr-tr"
 theme = "ananke"
 
+# Sitenizin tarayıcı sekmesinde ve en üstte görünecek ana başlığı.
+title = "Ali Osman Kapancı'nın Blogu" 
+
+[params]
+  # Başlığın hemen altında görünecek, sizi veya blogu özetleyen bir cümle.
+  description = "Teknoloji, seyahat ve hayat üzerine notlar."
+  
+  # Yazar adı (Her yazının altında görünebilir)
+  author = "Ali Osman Kapancı"
+
+  # --- İsteğe Bağlı: Profil Fotoğrafı ---
+  # Sitenin en üstüne veya altına koymak için profil fotoğrafınız
+  # 1. 'profil.jpg' (veya png) adındaki fotoğrafınızı 'static/images/' klasörüne koyun.
+  # 2. Sonra bu satırın başındaki # işaretini kaldırın.
+  # logo = "images/profil.jpg"
+
+  # --- Sosyal Medya İkonları ---
+  # Bu ikonlar genellikle sitenin en altında (footer) görünür.
+  
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/kapanci"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
+  
+  # Mail linkinin doğru formatı 'mailto:' ile başlar, bunu düzelttim.
+  [[params.social]]
+    name = "mail"
+    url = "mailto:aliosmankapanci@gmail.com"
