@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Ali Osman Kapancı</title>
     <link>http://localhost:1313/blog-sitem/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jul 2025 11:25:02 +0300</lastBuildDate>
+    <description>Recent content on Ali Osman Kapancı</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Fri, 25 Jul 2025 12:19:57 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/blog-sitem/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Yeni Yazimin Adi</title>
+      <title>Hakkimda</title>
+      <link>http://localhost:1313/blog-sitem/hakkimda/</link>
+      <pubDate>Fri, 25 Jul 2025 12:19:57 +0300</pubDate>
+      <guid>http://localhost:1313/blog-sitem/hakkimda/</guid>
+      <description>&lt;p&gt;Bnen Ali Osman Kapancı. Fırat Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Staj Günlüklerim: Softtech&#39;te Bir Yazılım Stajyerinin Yolculuğu 2</title>
       <link>http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/</link>
       <pubDate>Fri, 25 Jul 2025 11:25:02 +0300</pubDate>
       <guid>http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/</guid>
-      <description>&lt;p&gt;a&#xA;as&#xA;asdasd&#xA;asafasf&#xA;acfad&#xA;cadc&#xA;advc&#xA;davadvad&#xA;vad&lt;/p&gt;</description>
+      <description>&lt;p&gt;✍️ &lt;strong&gt;Plateau Studio ile İlk Gerçek Uygulamalarım&lt;/strong&gt;
+Softtech’te stajıma başladıktan sonra, ilk hafta oryantasyon süreciyle tanıştım. Şirketin kullandığı araçlar, iç iletişim platformları, güvenlik politikaları ve ekip yapısı gibi birçok konuda bilgilendirildik. Bu süreçte özellikle mentörlerimizin bizimle birebir ilgilenmesi, sormaktan çekindiğimiz her konuda destek olmaları, yeni ortama adapte olmamı oldukça kolaylaştırdı.&lt;/p&gt;
+&lt;p&gt;Oryantasyonun ardından teknik eğitimlere geçtik. Bu eğitimler sırasında Plateau Studio adlı düşük kod geliştirme platformuyla tanıştım. Daha önce hiç low-code bir platformla çalışmamıştım, bu yüzden başta biraz çekinsem de zamanla mantığını anladım ve keyif almaya başladım. Component&amp;rsquo;leri kullanarak kullanıcı arayüzü oluşturmak, event&amp;rsquo;lerle davranışları tanımlamak ve veri yönetimini bu yapıda öğrenmek benim için oldukça öğretici oldu.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ilk Yazim</title>
+      <title>Staj Günlüklerim: Softtech&#39;te Bir Yazılım Stajyerinin Yolculuğu</title>
       <link>http://localhost:1313/blog-sitem/posts/ilk-yazim/</link>
-      <pubDate>Fri, 25 Jul 2025 10:54:00 +0300</pubDate>
+      <pubDate>Thu, 24 Jul 2025 10:54:00 +0300</pubDate>
       <guid>http://localhost:1313/blog-sitem/posts/ilk-yazim/</guid>
-      <description></description>
+      <description>&lt;p&gt;✍️ &lt;strong&gt;Staja Kabul Süreci: Teknik Sınavdan Mülakata&lt;/strong&gt;
+Softtech’te staja kabul edilmemle başlayan bu yolculuk, aslında çok daha öncesinde başladı. Yazılım alanında bir kariyer hedefim vardı ve bu yolda önemli bir adım atmak istiyordum. Bu süreçte karşıma çıkan en büyük fırsatlardan biri Softtech’in staj ilanı oldu.&lt;/p&gt;
+&lt;p&gt;İlk aşama, teknik bilgi ve problem çözme yeteneğimi ölçen bir HackerRank sınavıydı. Bu sınava hazırlanmak için oldukça yoğun çalıştım. Sadece okulda öğrendiklerimle yetinmedim; ek olarak HackerRank, LeetCode ve benzeri platformlardan bolca soru çözdüm. Zaman yönetimi ve algoritmik düşünme açısından bu pratiklerin büyük katkısını gördüm.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

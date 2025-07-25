@@ -4,7 +4,7 @@ languageCode = "tr-tr"
 title = "Ali Osman Kapancı"
 theme = "PaperMod"
 
-# Yeni eklenen bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
+# Bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
 publishDir = "public" 
 
 [params]
@@ -14,30 +14,36 @@ publishDir = "public"
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  defaultTheme = "auto"
+  defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
 
+  # BU BÖLÜM ANA SAYFANIZI OLUŞTURACAK
   [params.profileMode]
     enabled = true
     title = "Ali Osman Kapancı"
     subtitle = "Merhaba, burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum. Keyifli okumalar!"
     
+    # Ana sayfadaki butonlar
     [[params.profileMode.buttons]]
       name = "Yazılar"
-      url = "/posts"
+      url = "/posts/" # <-- DÜZELTİLDİ
     [[params.profileMode.buttons]]
       name = "Hakkımda"
-      url = "/hakkimda"
+      url = "/hakkimda/" # <-- DÜZELTİLDİ
 
+  # Sosyal Medya İkonları
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kapanci"
+
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
+
   [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
 
+# Üst menü ayarları
 [menu]
   [[menu.main]]
     identifier = "yazilar"
