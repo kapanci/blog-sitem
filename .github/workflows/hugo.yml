@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.2 # Buradaki Hugo sürümünü kendi sürümünüzle değiştirebilirsiniz
+      HUGO_VERSION: 0.147.0 # Buradaki Hugo sürümünü kendi sürümünüzle değiştirebilirsiniz
     steps:
       - name: Install Hugo CLI
         run: |
