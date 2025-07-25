@@ -1,96 +1,43 @@
-# Sitenin tam adresini ve varsayılan dilini belirliyoruz.
+# Sitenin tam adresini belirliyoruz.
 baseURL = "https://kapanci.github.io/blog-sitem/"
+languageCode = "tr-tr"
+title = "Ali Osman Kapancı"
 theme = "PaperMod"
-publishDir = "public"
-defaultContentLanguage = "tr" 
 
-# Her iki dil için de geçerli olan genel ayarlar
+# Bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
+publishDir = "public" 
+
 [params]
-  # Bu ayar, ana sayfanın Arşiv (sade liste) görünümünde olmasını sağlar.
-  defaultPaginator = "archives"
+  # --- ANA SAYFA AYARI ---
+  # 'defaultPaginator' ve 'profileMode' ayarları silindi.
+  # Aşağıdaki 'homeInfoParams' bölümü sayesinde, ana sayfada
+  # önce karşılama metni, altında ise varsayılan yazı listesi görünecek.
+
+  # Yazar bilgisi ve genel site açıklaması
+  author = "Ali Osman Kapancı"
+  description = "Teknoloji, seyahat ve hayat üzerine notlar."
+
+  # Diğer temel ayarlar
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
+  
+  # Ana sayfadaki karşılama metni ve ikonları gösteren bölüm
+  [params.homeInfoParams]
+    Title = "Merhaba! 👋"
+    Content = "Burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum."
+  
+  # Sosyal Medya İkonları
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/kapanci"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
+  [[params.socialIcons]]
+    name = "mail"
+    url = "mailto:aliosmankapanci@gmail.com"
 
-# DİL AYARLARI BAŞLIYOR
-[languages]
-
-  # --- TÜRKÇE SİTE AYARLARI ---
-  [languages.tr]
-    languageCode = "tr-tr"
-    languageName = "Türkçe"
-    weight = 1
-    title = "Ali Osman Kapancı"
-    
-    [languages.tr.params]
-      author = "Ali Osman Kapancı"
-      description = "Teknoloji, seyahat ve hayat üzerine notlar."
-
-      # Bu bölüm, ana sayfada ikonların görünmesini sağlar.
-      [languages.tr.params.homeInfoParams]
-        Title = "Merhaba! 👋"
-        Content = "Burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum."
-      
-      # Türkçe sitedeki sosyal ikonlar
-      [[languages.tr.params.socialIcons]]
-        name = "github"
-        url = "https://github.com/kapanci"
-      [[languages.tr.params.socialIcons]]
-        name = "linkedin"
-        url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-      [[languages.tr.params.socialIcons]]
-        name = "mail"
-        url = "mailto:aliosmankapanci@gmail.com"
-
-    [languages.tr.menu]
-      [[languages.tr.menu.main]]
-        identifier = "yazilar"
-        name = "Tüm Yazılar"
-        url = "/archives/" # Ana sayfayı arşiv yaptığımız için linki güncelledik
-        weight = 10
-      [[languages.tr.menu.main]]
-        identifier = "hakkimda"
-        name = "Hakkımda"
-        url = "/hakkimda/"
-        weight = 20
-
-  # --- İNGİLİZCE SİTE AYARLARI ---
-  [languages.en]
-    languageCode = "en-us"
-    languageName = "English"
-    weight = 2
-    title = "Ali Osman Kapanci"
-
-    [languages.en.params]
-      author = "Ali Osman Kapanci"
-      description = "Notes on technology, travel, and life."
-
-      # İngilizce ana sayfadaki ikon ve metinler
-      [languages.en.params.homeInfoParams]
-        Title = "Hi there! 👋"
-        Content = "Welcome to my personal blog. I share my notes and thoughts on technology, travel, and life."
-        
-      # İngilizce sitedeki sosyal ikonlar (aynı)
-      [[languages.en.params.socialIcons]]
-        name = "github"
-        url = "https://github.com/kapanci"
-      [[languages.en.params.socialIcons]]
-        name = "linkedin"
-        url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-      [[languages.en.params.socialIcons]]
-        name = "mail"
-        url = "mailto:aliosmankapanci@gmail.com"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "archives"
-        name = "All Posts"
-        url = "/archives/"
-        weight = 10
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/hakkimda/"
-        weight = 20
+# Üst menüyü tamamen kaldırdığımız için bu bölüm yok.
