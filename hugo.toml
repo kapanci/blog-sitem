@@ -1,4 +1,4 @@
-# Sitenin tam adresini buraya yazıyoruz. En önemli satır bu.
+# Sitenin tam adresini buraya yazıyoruz.
 baseURL = "https://kapanci.github.io/blog-sitem/"
 languageCode = "tr-tr"
 title = "Ali Osman Kapancı"
@@ -16,34 +16,25 @@ publishDir = "public"
   ShowCodeCopyButtons = true
   defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
 
-  # BU BÖLÜM ANA SAYFANIZI OLUŞTURACAK
+  # --- ANA SAYFA AYARINI KAPATIYORUZ ---
+  # Ana sayfadaki karşılama ekranını devre dışı bıraktık.
+  # Artık ana sayfada doğrudan yazı listesi görünecek.
   [params.profileMode]
-    enabled = true
-    title = "Ali Osman Kapancı"
-    subtitle = "Merhaba, burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum. Keyifli okumalar!"
+    enabled = false 
     
-    # Ana sayfadaki butonlar
-    [[params.profileMode.buttons]]
-      name = "Yazılar"
-      url = "/posts/" # <-- DÜZELTİLDİ
-    [[params.profileMode.buttons]]
-      name = "Hakkımda"
-      url = "/hakkimda/" # <-- DÜZELTİLDİ
-
-  # Sosyal Medya İkonları
+  # --- SOSYAL MEDYA İKONLARI (BUNLAR KALABİLİR) ---
+  # Bu ikonlar üst menüde ve yazıların altında görünmeye devam edebilir.
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kapanci"
-
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-
   [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
 
-# Üst menü ayarları
+# Üst menü ayarları (Bunlar hala çalışacak)
 [menu]
   [[menu.main]]
     identifier = "yazilar"
