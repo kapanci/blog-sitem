@@ -1,0 +1,5 @@
++++
+date = '2025-07-25T10:54:00+03:00'
+draft = false
+title = 'Ilk Yazim'
++++
