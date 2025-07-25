@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/blog-sitem/</loc>
+    <lastmod>2025-07-25T11:25:02+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog-sitem/posts/</loc>
+    <lastmod>2025-07-25T11:25:02+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/</loc>
+    <lastmod>2025-07-25T11:25:02+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog-sitem/posts/ilk-yazim/</loc>
     <lastmod>2025-07-25T10:54:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-25T10:54:00+03:00</lastmod>
+    <loc>http://localhost:1313/blog-sitem/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/blog-sitem/tags/</loc>
   </url>
 </urlset>
