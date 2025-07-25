@@ -29,3 +29,8 @@ publishDir = "public"
   [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
+
+    [params]
+  
+  # Özel CSS dosyalarımızı buraya ekliyoruz.
+  custom_css = ["css/custom.css"]
