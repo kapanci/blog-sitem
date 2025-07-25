@@ -1,82 +1,59 @@
-/* --- 1. Adım: Modern Fontları İçe Aktar --- */
+/* Sadece Koyu Mod İçin Sadeleştirilmiş Stiller */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap');
 
-/* --- 2. Adım: Yeni Renk Paletimizi ve Temel Ayarları Tanımla --- */
-:root {
-    --main-background: #1a1a1d; /* Koyu, siyaha yakın bir arka plan */
-    --main-text-color: #f5f5f7;  /* Hafif kırık, göz yormayan bir beyaz */
-    --secondary-text-color: #a9a9b3; /* Tarih ve okuma süresi gibi ikincil metinler için */
-    --card-background: #2c2c31;  /* Yazı kartlarının arka planı */
-    --accent-color: #00a8cc;     /* Linkler ve vurgular için canlı bir turkuaz */
-    --border-color: #444;      /* Kartların etrafındaki ince çizgi */
-    
-    /* Fontları tanımla */
-    --main-font: 'Inter', sans-serif;
-    --heading-font: 'Merriweather', serif;
-}
-
-/* --- 3. Adım: Temel Elementleri Yeniden Stille --- */
 body {
-    background: var(--main-background);
-    color: var(--main-text-color);
-    font-family: var(--main-font);
-    line-height: 1.7; /* Satır aralığını artırarak okunabilirliği iyileştir */
+    background: #1a1a1d;
+    color: #f5f5f7;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
 }
 
-/* Başlıklar için özel font ve renk */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--accent-color);
+    font-family: 'Merriweather', serif;
+    color: #00a8cc;
 }
 
-/* Ana sayfadaki karşılama metni */
 .home-info h1 {
-    color: var(--main-text-color); /* Karşılama başlığını normal metin rengi yap */
+    color: #f5f5f7;
 }
 
-/* Link stilleri */
 a {
-    color: var(--accent-color);
+    color: #00a8cc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--main-text-color);
+    color: #f5f5f7;
 }
 
-
-/* --- 4. Adım: Yazı Kartlarını Şıklaştıralım (En Önemli Kısım) --- */
 .post-entry {
-    background: var(--card-background);
-    border: 1px solid var(--border-color);
-    border-radius: 8px; /* Kenarları yumuşat */
+    background: #2c2c31;
+    border: 1px solid #444;
+    border-radius: 8px;
     padding: 25px;
     margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Yumuşak geçişler */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Kartın üzerine gelince oluşan animasyon */
 .post-entry:hover {
-    transform: translateY(-5px); /* Kartı 5 piksel yukarı kaldır */
-    border-color: var(--accent-color);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin bir gölge */
+    transform: translateY(-5px);
+    border-color: #00a8cc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Kartlardaki ikincil metinlerin rengi */
 .entry-meta {
-    color: var(--secondary-text-color);
+    color: #a9a9b3;
 }
 
-
-/* --- 5. Adım: Sosyal Medya İkonlarını Güzelleştir --- */
 .social-icons a {
-    font-size: 1.5rem; /* İkonları biraz büyüt */
+    font-size: 1.5rem;
     margin: 0 10px;
+    color: #a9a9b3;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: scale(1.2); /* Üzerine gelince ikonu büyüt */
-    color: var(--accent-color);
+    transform: scale(1.2);
+    color: #00a8cc;
 }

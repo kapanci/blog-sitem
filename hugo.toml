@@ -17,8 +17,13 @@ publishDir = "public"
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
-  ShowScrollToTop = true # Yukarı çık butonu
+  ShowScrollToTop = true
+  
+  # --- AYDINLIK MODU İPTAL EDEN AYARLAR ---
+  # Bu satır, sitenin her zaman koyu modda açılmasını sağlar.
+  defaultTheme = "dark" 
+  # Bu satır, kullanıcının modu değiştirmesini sağlayan ikonu gizler.
+  disableThemeToggle = true
   
   # Ana sayfadaki karşılama metni ve ikonları gösteren bölüm
   [params.homeInfoParams]
@@ -36,4 +41,7 @@ publishDir = "public"
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
   
+  # Özel CSS dosyalarımız (bu aynı kalıyor, çünkü koyu mod stilimiz burada)
+  custom_css = ["css/custom.css"]
+
 # Üst menüyü kaldırdık, bu bölüm boş.
