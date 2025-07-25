@@ -1,35 +1,25 @@
-# Sitenin tam adresini belirliyoruz.
 baseURL = "https://kapanci.github.io/blog-sitem/"
 languageCode = "tr-tr"
 title = "Ali Osman Kapancı"
 theme = "PaperMod"
-
-# Bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
 publishDir = "public" 
 
 [params]
-  # --- ANA SAYFA AYARI ---
-  # 'defaultPaginator' ve 'profileMode' ayarları silindi.
-  # Aşağıdaki 'homeInfoParams' bölümü sayesinde, ana sayfada
-  # önce karşılama metni, altında ise varsayılan yazı listesi görünecek.
-
-  # Yazar bilgisi ve genel site açıklaması
   author = "Ali Osman Kapancı"
   description = "Teknoloji, seyahat ve hayat üzerine notlar."
-
-  # Diğer temel ayarlar
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
   
-  # Ana sayfadaki karşılama metni ve ikonları gösteren bölüm
+  # Ana sayfada yukarı çık butonunu aktif hale getirir.
+  ShowScrollToTop = true
+  
   [params.homeInfoParams]
     Title = "Merhaba! 👋"
     Content = "Burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum."
   
-  # Sosyal Medya İkonları
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kapanci"
@@ -39,5 +29,3 @@ publishDir = "public"
   [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
-
-# Üst menüyü tamamen kaldırdığımız için bu bölüm yok.
