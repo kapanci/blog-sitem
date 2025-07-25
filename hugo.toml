@@ -36,7 +36,4 @@ publishDir = "public"
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
   
-  # Özel CSS dosyamızı Hugo'ya tanıtıyoruz.
-  custom_css = ["css/custom.css"]
-
 # Üst menüyü kaldırdık, bu bölüm boş.
