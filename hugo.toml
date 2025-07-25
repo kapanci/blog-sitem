@@ -1,35 +1,55 @@
 baseURL = "https://kapanci.github.io/blog-sitem/"
 languageCode = "tr-tr"
-theme = "ananke"
-
-# Sitenizin tarayıcı sekmesinde ve en üstte görünecek ana başlığı.
-title = "Ali Osman Kapancı'nın Blogu" 
+title = "Ali Osman Kapancı" # Sadece isminiz, daha sade durur
+theme = "PaperMod"
 
 [params]
-  # Başlığın hemen altında görünecek, sizi veya blogu özetleyen bir cümle.
-  description = "Teknoloji, seyahat ve hayat üzerine notlar."
-  
-  # Yazar adı (Her yazının altında görünebilir)
   author = "Ali Osman Kapancı"
+  description = "Teknoloji, seyahat ve hayat üzerine notlar."
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
 
-  # --- İsteğe Bağlı: Profil Fotoğrafı ---
-  # Sitenin en üstüne veya altına koymak için profil fotoğrafınız
-  # 1. 'profil.jpg' (veya png) adındaki fotoğrafınızı 'static/images/' klasörüne koyun.
-  # 2. Sonra bu satırın başındaki # işaretini kaldırın.
-  # logo = "images/profil.jpg"
+  # BU BÖLÜM ANA SAYFANIZI OLUŞTURACAK (Referans site gibi)
+  [params.profileMode]
+    enabled = true
+    title = "Ali Osman Kapancı"
+    subtitle = "Merhaba, burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum. Keyifli okumalar!"
+    # Görsel istemediğiniz için bu satırı kullanmıyoruz.
+    # imageUrl = "/images/profil.jpg" 
+    
+    # Ana sayfadaki butonlar
+    [[params.profileMode.buttons]]
+      name = "Yazılar"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "Hakkımda"
+      url = "/hakkimda"
 
-  # --- Sosyal Medya İkonları ---
-  # Bu ikonlar genellikle sitenin en altında (footer) görünür.
-  
-  [[params.social]]
+  # Sosyal Medya İkonları
+  [[params.socialIcons]]
     name = "github"
     url = "https://github.com/kapanci"
 
-  [[params.social]]
+  [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-  
-  # Mail linkinin doğru formatı 'mailto:' ile başlar, bunu düzelttim.
-  [[params.social]]
+
+  [[params.socialIcons]]
     name = "mail"
     url = "mailto:aliosmankapanci@gmail.com"
+
+# Üst menü ayarları (isteğe bağlı)
+[menu]
+  [[menu.main]]
+    identifier = "yazilar"
+    name = "Tüm Yazılar"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "hakkimda"
+    name = "Hakkımda"
+    url = "/hakkimda/"
+    weight = 20
