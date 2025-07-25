@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://localhost:1313/blog-sitem/</loc>
-    <lastmod>2025-07-25T12:19:57+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/hakkimda/</loc>
-    <lastmod>2025-07-25T12:19:57+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/posts/</loc>
-    <lastmod>2025-07-25T11:25:02+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/</loc>
-    <lastmod>2025-07-25T11:25:02+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/posts/ilk-yazim/</loc>
-    <lastmod>2025-07-24T10:54:00+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/blog-sitem/tags/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://localhost:1313/blog-sitem/tr/sitemap.xml</loc>
+    
+      <lastmod>2025-07-25T12:19:57+03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/blog-sitem/en/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

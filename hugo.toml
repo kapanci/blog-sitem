@@ -1,48 +1,96 @@
-# Sitenin tam adresini buraya yazıyoruz.
+# Sitenin tam adresini ve varsayılan dilini belirliyoruz.
 baseURL = "https://kapanci.github.io/blog-sitem/"
-languageCode = "tr-tr"
-title = "Ali Osman Kapancı"
 theme = "PaperMod"
+publishDir = "public"
+defaultContentLanguage = "tr" 
 
-# Bu satır, Hugo'nun linkleri doğru oluşturmasını sağlar.
-publishDir = "public" 
-
+# Her iki dil için de geçerli olan genel ayarlar
 [params]
-  author = "Ali Osman Kapancı"
-  description = "Teknoloji, seyahat ve hayat üzerine notlar."
+  # Bu ayar, ana sayfanın Arşiv (sade liste) görünümünde olmasını sağlar.
+  defaultPaginator = "archives"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
-  defaultTheme = "auto" # Ziyaretçinin sistemine göre aydınlık/karanlık mod
+  defaultTheme = "auto"
 
-  # --- ANA SAYFA AYARINI KAPATIYORUZ ---
-  # Ana sayfadaki karşılama ekranını devre dışı bıraktık.
-  # Artık ana sayfada doğrudan yazı listesi görünecek.
-  [params.profileMode]
-    enabled = false 
+# DİL AYARLARI BAŞLIYOR
+[languages]
+
+  # --- TÜRKÇE SİTE AYARLARI ---
+  [languages.tr]
+    languageCode = "tr-tr"
+    languageName = "Türkçe"
+    weight = 1
+    title = "Ali Osman Kapancı"
     
-  # --- SOSYAL MEDYA İKONLARI (BUNLAR KALABİLİR) ---
-  # Bu ikonlar üst menüde ve yazıların altında görünmeye devam edebilir.
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/kapanci"
-  [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
-  [[params.socialIcons]]
-    name = "mail"
-    url = "mailto:aliosmankapanci@gmail.com"
+    [languages.tr.params]
+      author = "Ali Osman Kapancı"
+      description = "Teknoloji, seyahat ve hayat üzerine notlar."
 
-# Üst menü ayarları (Bunlar hala çalışacak)
-[menu]
-  [[menu.main]]
-    identifier = "yazilar"
-    name = "Tüm Yazılar"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    identifier = "hakkimda"
-    name = "Hakkımda"
-    url = "/hakkimda/"
-    weight = 20
+      # Bu bölüm, ana sayfada ikonların görünmesini sağlar.
+      [languages.tr.params.homeInfoParams]
+        Title = "Merhaba! 👋"
+        Content = "Burası benim kişisel blogum. Teknoloji, seyahat ve hayat üzerine kişisel notlarımı ve düşüncelerimi paylaşıyorum."
+      
+      # Türkçe sitedeki sosyal ikonlar
+      [[languages.tr.params.socialIcons]]
+        name = "github"
+        url = "https://github.com/kapanci"
+      [[languages.tr.params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
+      [[languages.tr.params.socialIcons]]
+        name = "mail"
+        url = "mailto:aliosmankapanci@gmail.com"
+
+    [languages.tr.menu]
+      [[languages.tr.menu.main]]
+        identifier = "yazilar"
+        name = "Tüm Yazılar"
+        url = "/archives/" # Ana sayfayı arşiv yaptığımız için linki güncelledik
+        weight = 10
+      [[languages.tr.menu.main]]
+        identifier = "hakkimda"
+        name = "Hakkımda"
+        url = "/hakkimda/"
+        weight = 20
+
+  # --- İNGİLİZCE SİTE AYARLARI ---
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "English"
+    weight = 2
+    title = "Ali Osman Kapanci"
+
+    [languages.en.params]
+      author = "Ali Osman Kapanci"
+      description = "Notes on technology, travel, and life."
+
+      # İngilizce ana sayfadaki ikon ve metinler
+      [languages.en.params.homeInfoParams]
+        Title = "Hi there! 👋"
+        Content = "Welcome to my personal blog. I share my notes and thoughts on technology, travel, and life."
+        
+      # İngilizce sitedeki sosyal ikonlar (aynı)
+      [[languages.en.params.socialIcons]]
+        name = "github"
+        url = "https://github.com/kapanci"
+      [[languages.en.params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/ali-osman-kapanci-1067a2309/"
+      [[languages.en.params.socialIcons]]
+        name = "mail"
+        url = "mailto:aliosmankapanci@gmail.com"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "archives"
+        name = "All Posts"
+        url = "/archives/"
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/hakkimda/"
+        weight = 20

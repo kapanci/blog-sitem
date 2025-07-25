@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="tr" dir="auto">
 
 <head><script src="/blog-sitem/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog-sitem/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@ Oryantasyonun ardından teknik eğitimlere geçtik. Bu eğitimler sırasında Pl
 <link rel="mask-icon" href="http://localhost:1313/blog-sitem/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/">
+<link rel="alternate" hreflang="tr" href="http://localhost:1313/blog-sitem/posts/yeni-yazimin-adi/">
 <noscript>
     <style>
         #theme-toggle,
@@ -97,11 +97,17 @@ Oryantasyonun ardından teknik eğitimlere geçtik. Bu eğitimler sırasında Pl
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/blog-sitem/en/" title="English"
+                            aria-label="English">En</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/blog-sitem/posts/" title="Tüm Yazılar">
+                <a href="http://localhost:1313/blog-sitem/archives/" title="Tüm Yazılar">
                     <span>Tüm Yazılar</span>
                 </a>
             </li>
@@ -121,7 +127,7 @@ Oryantasyonun ardından teknik eğitimlere geçtik. Bu eğitimler sırasında Pl
     <h1 class="post-title entry-hint-parent">
       Staj Günlüklerim: Softtech&#39;te Bir Yazılım Stajyerinin Yolculuğu 2
     </h1>
-    <div class="post-meta"><span title='2025-07-25 11:25:02 +0300 +03'>July 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Ali Osman Kapancı
+    <div class="post-meta"><span title='2025-07-25 11:25:02 +0300 +03'>Temmuz 25, 2025</span>&nbsp;·&nbsp;2 dk&nbsp;·&nbsp;Ali Osman Kapancı
 
 </div>
   </header> 
@@ -141,7 +147,7 @@ Softtech’te stajıma başladıktan sonra, ilk hafta oryantasyon süreciyle tan
     </ul>
 <nav class="paginav">
   <a class="next" href="http://localhost:1313/blog-sitem/posts/ilk-yazim/">
-    <span class="title">Next »</span>
+    <span class="title">Sonraki »</span>
     <br>
     <span>Staj Günlüklerim: Softtech&#39;te Bir Yazılım Stajyerinin Yolculuğu</span>
   </a>
@@ -226,12 +232,12 @@ Softtech’te stajıma başladıktan sonra, ilk hafta oryantasyon süreciyle tan
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerHTML = 'copy';
+        copybutton.innerHTML = 'Kopyala';
 
         function copyingDone() {
-            copybutton.innerHTML = 'copied!';
+            copybutton.innerHTML = 'Kopyalandı!';
             setTimeout(() => {
-                copybutton.innerHTML = 'copy';
+                copybutton.innerHTML = 'Kopyala';
             }, 2000);
         }
 
